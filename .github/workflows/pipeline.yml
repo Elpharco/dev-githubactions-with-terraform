@@ -10,7 +10,7 @@ jobs:
     env:
       # AWS secrets
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_DEV_ACCESS_KEY_ID }}
-      AWS_DEV_SECRET_ACCESS_KEY: ${{ secrets.AWS_DEV_SECRETE_ACCESS_KEY }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_DEV_SECRETE_ACCESS_KEY }}
       
     runs-on: ubuntu-latest
     environment: dev
@@ -41,7 +41,7 @@ jobs:
       uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.14.3
-        tf_actions_subcommand: 'aply'
+        tf_actions_subcommand: 'apply'
         tf_actions_working_dir: '.'
         tf_actions_commit: true
   
