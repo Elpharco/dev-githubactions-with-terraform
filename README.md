@@ -1,5 +1,5 @@
 
-Task: A test GitHub Actions workflow to deploy Terraform Resource (an EC2 Instance) on AWS console.
+Task: A test GitHub Actions workflow to deploy Terraform Resource (ec2 instance) on AWS console on push to the *main branch*. Another workflow is added to destroy the resource on push to the *destroy-resource branch*.
 
 BLOCKER: Error while configuring Terraform S3 Backend- We initialised our code and applied to AWS (tfstate-file stored locally on local system). Hence, we had issues trying to move the state file to s3 bucket
 
