@@ -1,6 +1,5 @@
 
 Task: A test GitHub Actions workflow to deploy terraform resource (ec2 instance) to the AWS console, upon a push to the *main branch*. Another workflow *tf_destroy.yml* is added to destroy the resource when a push to the *destroy-resource branch* is triggered.
->>>>>>> destroy-resource
 
 BLOCKER: Error while configuring Terraform S3 Backend- We initialised our code and applied to AWS (tfstate-file stored locally on local system). Hence, we had issues trying to move the state file to s3 bucket
 
