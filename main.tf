@@ -1,22 +1,14 @@
-resource "aws_vpc" "VPC-test-pipeline" {
-  cidr_block = "10.0.0.0/16"
+
+resource "aws_instance" "ec2_dev-test" {
+
+  ami           = var.os-name
+  instance_type = var.instance-type
+  
+  
 
   tags = {
-    Name = "VPC_pipeline"
+    Name = "git_ec2_dev-test"
+
   }
+
 }
-
-
-# resource "aws_instance" "ec2_dev-test" {
-
-#   ami           = "ami-02d7fd1c2af6eead0"
-#   instance_type = "t2.micro"
-  
-  
-
-#   tags = {
-#     Name = "git_ec2_dev-test"
-
-#   }
-
-# }
